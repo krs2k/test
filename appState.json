@@ -1,0 +1,71 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "ab66f92c-b936-403f-b959-5b5cc2e7cb18": {
+        "id": "ab66f92c-b936-403f-b959-5b5cc2e7cb18",
+        "parent": null,
+        "name": "test.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "test.js",
+        "cursor": {
+          "lineNumber": 4,
+          "column": 3
+        },
+        "config": {
+          "runtime": "nodejs10.x",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": [],
+          "name": "test"
+        },
+        "triggers": [],
+        "lastUpdated": 1622889923056
+      }
+    },
+    "openFiles": [
+      "ab66f92c-b936-403f-b959-5b5cc2e7cb18"
+    ],
+    "currentFileId": "ab66f92c-b936-403f-b959-5b5cc2e7cb18",
+    "resources": {},
+    "customTemplate": {
+      "syntax": "JSON",
+      "overrideDefault": false,
+      "dialect": null,
+      "definitions": null
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {}
+    }
+  },
+  "PROJECT_META": {
+    "sigmaVersion": "1.8.0",
+    "projectName": "test",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "eu-central-1",
+    "platform": "AWS",
+    "language": "nodejs",
+    "platformRegions": {}
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "test",
+      "url": "https://github.com/krs2k/test"
+    }
+  }
+}
