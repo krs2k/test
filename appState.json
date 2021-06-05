@@ -11,8 +11,8 @@
         "isRemovable": true,
         "filePath": "test.js",
         "cursor": {
-          "lineNumber": 4,
-          "column": 3
+          "lineNumber": 8,
+          "column": 20
         },
         "config": {
           "runtime": "nodejs10.x",
@@ -22,15 +22,68 @@
           "layers": [],
           "name": "test"
         },
-        "triggers": [],
+        "triggers": [
+          {
+            "resourceName": "apigqwetestget",
+            "config": {}
+          }
+        ],
         "lastUpdated": 1622889923056
+      },
+      "58a0a154-0d77-4f1a-a642-f2e7f582b250": {
+        "id": "58a0a154-0d77-4f1a-a642-f2e7f582b250",
+        "parent": null,
+        "name": "package.json",
+        "type": "JSON_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "package.json"
       }
     },
     "openFiles": [
       "ab66f92c-b936-403f-b959-5b5cc2e7cb18"
     ],
     "currentFileId": "ab66f92c-b936-403f-b959-5b5cc2e7cb18",
-    "resources": {},
+    "resources": {
+      "ddbusers": {
+        "name": "ddbusers",
+        "type": "DynamoDB",
+        "config": {
+          "mode": 0,
+          "table": {
+            "arn": "",
+            "name": "users",
+            "partitionKey": "id",
+            "partitionKeyType": "S",
+            "hasSortKey": false,
+            "sortKey": "",
+            "sortKeyType": "S",
+            "payPerRequest": true,
+            "mode": 0
+          }
+        }
+      },
+      "apigqwetestget": {
+        "name": "apigqwetestget",
+        "type": "API_GATEWAY",
+        "config": {
+          "apiType": 1,
+          "apiMode": 0,
+          "apiName": "qwe",
+          "endpointType": "REGIONAL",
+          "resourceMode": 0,
+          "resourceName": "test",
+          "resourcePath": "/test",
+          "restMethod": "GET",
+          "proxyIntegration": false,
+          "enableCORS": false,
+          "stageMode": 0,
+          "stageName": "dev",
+          "mode": 0
+        }
+      }
+    },
     "customTemplate": {
       "syntax": "JSON",
       "overrideDefault": false,
@@ -48,7 +101,15 @@
       }
     ],
     "packageJSON": {
-      "dependencies": {}
+      "dependencies": {
+        "aws-sdk": {
+          "name": "aws-sdk",
+          "language": "nodejs",
+          "version": "2.817.0",
+          "dev": true,
+          "notRemovable": false
+        }
+      }
     }
   },
   "PROJECT_META": {
