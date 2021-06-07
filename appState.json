@@ -11,8 +11,8 @@
         "isRemovable": true,
         "filePath": "test.js",
         "cursor": {
-          "lineNumber": 8,
-          "column": 20
+          "lineNumber": 6,
+          "column": 3
         },
         "config": {
           "runtime": "nodejs10.x",
@@ -28,7 +28,7 @@
             "config": {}
           }
         ],
-        "lastUpdated": 1622889923056
+        "lastUpdated": 1623055082390
       },
       "58a0a154-0d77-4f1a-a642-f2e7f582b250": {
         "id": "58a0a154-0d77-4f1a-a642-f2e7f582b250",
@@ -80,6 +80,25 @@
           "enableCORS": false,
           "stageMode": 0,
           "stageName": "dev",
+          "mode": 0
+        }
+      },
+      "apigtestsigmaproductany": {
+        "name": "apigtestsigmaproductany",
+        "type": "API_GATEWAY",
+        "config": {
+          "apiType": 1,
+          "apiMode": 0,
+          "apiName": "testsigma",
+          "endpointType": "REGIONAL",
+          "resourceMode": 0,
+          "resourceName": "product",
+          "resourcePath": "/product",
+          "restMethod": "ANY",
+          "proxyIntegration": false,
+          "enableCORS": false,
+          "stageMode": 0,
+          "stageName": "dfgfg",
           "mode": 0
         }
       }
