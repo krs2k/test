@@ -11,8 +11,8 @@
         "isRemovable": true,
         "filePath": "test.js",
         "cursor": {
-          "lineNumber": 6,
-          "column": 3
+          "lineNumber": 13,
+          "column": 1
         },
         "config": {
           "runtime": "nodejs10.x",
@@ -24,7 +24,7 @@
         },
         "triggers": [
           {
-            "resourceName": "apigqwetestget",
+            "resourceName": "apigtestsigmayooany",
             "config": {}
           }
         ],
@@ -46,14 +46,33 @@
     ],
     "currentFileId": "ab66f92c-b936-403f-b959-5b5cc2e7cb18",
     "resources": {
-      "ddbusers": {
-        "name": "ddbusers",
+      "apigtestsigmayooany": {
+        "name": "apigtestsigmayooany",
+        "type": "API_GATEWAY",
+        "config": {
+          "apiType": 1,
+          "apiMode": 0,
+          "apiName": "testsigma",
+          "endpointType": "EDGE",
+          "resourceMode": 0,
+          "resourceName": "yoo",
+          "resourcePath": "/yoo",
+          "restMethod": "ANY",
+          "proxyIntegration": false,
+          "enableCORS": false,
+          "stageMode": 0,
+          "stageName": "dev",
+          "mode": 0
+        }
+      },
+      "ddbtest": {
+        "name": "ddbtest",
         "type": "DynamoDB",
         "config": {
           "mode": 0,
           "table": {
             "arn": "",
-            "name": "users",
+            "name": "test",
             "partitionKey": "id",
             "partitionKeyType": "S",
             "hasSortKey": false,
@@ -62,44 +81,6 @@
             "payPerRequest": true,
             "mode": 0
           }
-        }
-      },
-      "apigqwetestget": {
-        "name": "apigqwetestget",
-        "type": "API_GATEWAY",
-        "config": {
-          "apiType": 1,
-          "apiMode": 0,
-          "apiName": "qwe",
-          "endpointType": "REGIONAL",
-          "resourceMode": 0,
-          "resourceName": "test",
-          "resourcePath": "/test",
-          "restMethod": "GET",
-          "proxyIntegration": false,
-          "enableCORS": false,
-          "stageMode": 0,
-          "stageName": "dev",
-          "mode": 0
-        }
-      },
-      "apigtestsigmaproductany": {
-        "name": "apigtestsigmaproductany",
-        "type": "API_GATEWAY",
-        "config": {
-          "apiType": 1,
-          "apiMode": 0,
-          "apiName": "testsigma",
-          "endpointType": "REGIONAL",
-          "resourceMode": 0,
-          "resourceName": "product",
-          "resourcePath": "/product",
-          "restMethod": "ANY",
-          "proxyIntegration": false,
-          "enableCORS": false,
-          "stageMode": 0,
-          "stageName": "dfgfg",
-          "mode": 0
         }
       }
     },
