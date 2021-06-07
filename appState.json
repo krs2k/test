@@ -11,7 +11,7 @@
         "isRemovable": true,
         "filePath": "test.js",
         "cursor": {
-          "lineNumber": 13,
+          "lineNumber": 15,
           "column": 1
         },
         "config": {
@@ -28,7 +28,7 @@
             "config": {}
           }
         ],
-        "lastUpdated": 1623055082390
+        "lastUpdated": 1623055559328
       },
       "58a0a154-0d77-4f1a-a642-f2e7f582b250": {
         "id": "58a0a154-0d77-4f1a-a642-f2e7f582b250",
@@ -39,10 +39,44 @@
         "children": [],
         "isRemovable": true,
         "filePath": "package.json"
+      },
+      "5d0fff91-aed4-47d4-961f-b11443c36ef1": {
+        "id": "5d0fff91-aed4-47d4-961f-b11443c36ef1",
+        "parent": null,
+        "name": "handler.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "handler.js",
+        "cursor": {
+          "lineNumber": 10,
+          "column": 14
+        },
+        "config": {
+          "runtime": "nodejs10.x",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": [],
+          "name": "handler"
+        },
+        "triggers": [
+          {
+            "resourceName": "ddbtest",
+            "config": {
+              "StartingPosition": "TRIM_HORIZON",
+              "BatchSize": "100",
+              "StreamViewType": "NEW_IMAGE"
+            }
+          }
+        ],
+        "lastUpdated": 1623055419937
       }
     },
     "openFiles": [
-      "ab66f92c-b936-403f-b959-5b5cc2e7cb18"
+      "ab66f92c-b936-403f-b959-5b5cc2e7cb18",
+      "5d0fff91-aed4-47d4-961f-b11443c36ef1"
     ],
     "currentFileId": "ab66f92c-b936-403f-b959-5b5cc2e7cb18",
     "resources": {
@@ -73,6 +107,24 @@
           "table": {
             "arn": "",
             "name": "test",
+            "partitionKey": "id",
+            "partitionKeyType": "S",
+            "hasSortKey": false,
+            "sortKey": "",
+            "sortKeyType": "S",
+            "payPerRequest": true,
+            "mode": 0
+          }
+        }
+      },
+      "ddbinna": {
+        "name": "ddbinna",
+        "type": "DynamoDB",
+        "config": {
+          "mode": 0,
+          "table": {
+            "arn": "",
+            "name": "inna",
             "partitionKey": "id",
             "partitionKeyType": "S",
             "hasSortKey": false,
